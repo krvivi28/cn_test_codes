@@ -1,25 +1,17 @@
 const request = require("supertest");
 const express = require("express");
 const path = require("path");
+const renderStatic = require(".");
 
-describe("GET / - default route", () => {
-  let app;
+describe("GET /index.html - serving static file", () => {
+  let server;
+  server = express();
+  const staticPath = path.join(__dirname, "public");
+  renderStatic(server, staticPath);
 
-  beforeEach(() => {
-    app = express();
-    jest.spyOn(console, "log").mockImplementation();
-    const staticPath = path.join(__dirname, "public");
-    app.use(express.static(staticPath));
-  });
-
-  afterEach(() => {
-    jest.restoreAllMocks();
-  });
-
-  it("returns 'get method called!'", async () => {
-    const response = await request(app).get("/");
-
+  it("serves the index.html file", async () => {
+    const response = await request(server).get("/index.html");
     expect(response.status).toBe(200);
-    expect(response.text).toBe("get method called!");
+    expect(response.text).toContain("<html");
   });
 });
