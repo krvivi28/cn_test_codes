@@ -1,5 +1,5 @@
 {
-  "runtime": 416,
+  "runtime": 742,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -8,12 +8,12 @@
   "failedTestCases": [],
   "suites": [
     {
-      "suiteName": "GET /test - logging",
+      "suiteName": "GET / - setCustomHeader",
       "passed": true,
       "testCases": [
         {
           "passed": true,
-          "description": "logs the request information"
+          "description": "sets the custom header and sends the response"
         }
       ]
     }
