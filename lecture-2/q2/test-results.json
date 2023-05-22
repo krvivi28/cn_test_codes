@@ -1,5 +1,5 @@
 {
-  "runtime": 336,
+  "runtime": 297,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -8,16 +8,16 @@
   "failedTestCases": [],
   "suites": [
     {
-      "suiteName": "Blog Actions",
+      "suiteName": "codebase to comply with the ES6 module syntax",
       "passed": true,
       "testCases": [
         {
           "passed": true,
-          "description": "writeBlog should write the blog content to file"
+          "description": "should print sum of arr [100,10,1] to be 111"
         },
         {
           "passed": true,
-          "description": "publishBlog should return the blog content from file"
+          "description": "should mean of arr [100,10,1] to be 37"
         }
       ]
     }
