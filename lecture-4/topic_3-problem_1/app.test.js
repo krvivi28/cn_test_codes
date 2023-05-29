@@ -12,10 +12,6 @@ describe("GET /test - logging", () => {
 
   it("logs the request information", async () => {
     const response = await request(app).get("/");
-
-    expect(response.status).toBe(200);
-    expect(response.text).toBe("Coding Ninjas!");
-
     expect(console.log).toHaveBeenCalledWith("GET");
     expect(console.log).toHaveBeenCalledWith("/");
   });

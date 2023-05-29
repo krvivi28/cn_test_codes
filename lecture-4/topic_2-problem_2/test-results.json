@@ -1,9 +1,9 @@
 {
-  "runtime": 645,
+  "runtime": 571,
   "percentageScore": 100,
   "count": {
-    "total": 2,
-    "passed": 2
+    "total": 1,
+    "passed": 1
   },
   "failedTestCases": [],
   "suites": [
@@ -14,16 +14,6 @@
         {
           "passed": true,
           "description": "responds with 'Be a Coding Ninja.' when a GET request is made to '/'"
-        }
-      ]
-    },
-    {
-      "suiteName": "startServer",
-      "passed": true,
-      "testCases": [
-        {
-          "passed": true,
-          "description": "prints the correct message to the console"
         }
       ]
     }

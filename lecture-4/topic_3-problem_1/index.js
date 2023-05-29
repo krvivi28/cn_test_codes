@@ -15,10 +15,6 @@ app.get("/", (req, res) => {
   res.send("Coding Ninjas!");
 });
 
-app.listen(5000, () => {
-  console.log("server is listenig...");
-});
-
 module.exports = app;
 
 // This code sets up an Express server that listens on port 5000. It defines a middleware function called `logRequest()` that logs the request method, path, and timestamp to the console for every incoming request to the root path ("/"). The middleware function is added to the application using `app.get()` and `next()` is called to pass the request to the next middleware function in the stack.
