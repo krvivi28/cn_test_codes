@@ -7,15 +7,15 @@ describe("Express Server", () => {
     expect(response.status).toEqual(200);
     expect(response.text).toEqual("Be a Coding Ninja.");
   });
-  // it("prints the correct message to the console", () => {
-  //       const mockConsoleLog = jest.spyOn(console, "log");
-  //       const port = 3100;
-  //       startServer(port);
-  //       expect(mockConsoleLog).toHaveBeenCalledWith(
-  //         `server is listening at port: ${port}`
-  //       );
-  //       mockConsoleLog.mockRestore();
-  //     });
+  it("prints the correct message to the console", () => {
+        const mockConsoleLog = jest.spyOn(console, "log");
+        const port = 3100;
+        startServer(port);
+        expect(mockConsoleLog).toHaveBeenCalledWith(
+          `server is listening at port: ${port}`
+        );
+        mockConsoleLog.mockRestore();
+      });
 });
 
 // describe('Server Tests', () => {

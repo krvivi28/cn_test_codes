@@ -1,20 +1,12 @@
-import { publishBlog, writeBlog } from "./blogActions.js";
-import fs from "fs";
-beforeEach(() => {
-  fs.writeFileSync("myblog.txt", "");
-});
-describe("Blog Actions", () => {
-  it("writeBlog should write the blog content to file", () => {
-    const content = "This is my blog content";
-    writeBlog("myblog.txt", content);
-    const fileContent = fs.readFileSync("myblog.txt", "utf-8");
-    expect(fileContent).toEqual(content);
-  });
+import request from "supertest";
+import app from "./index.js";
 
-  it("publishBlog should return the blog content from file", () => {
-    const content = "This is my blog content";
-    fs.writeFileSync("mytext.txt", content);
-    const publishedBlog = publishBlog("mytext.txt");
-    expect(publishedBlog).toEqual(content);
+describe("Testing userController function and GET request('/users') at  ", () => {
+  it("should check status and respose of GET request('/users')", async () => {
+    const res = await request(app).get("/users");
+    expect(res.status).toBe(200);
+    expect(res.header["content-type"]).toContain("text/html");
+    expect(res.text).toContain("<!DOCTYPE html>");
+    expect(res.text).toContain("Mavis");
   });
 });

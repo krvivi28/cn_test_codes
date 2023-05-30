@@ -1,5 +1,5 @@
 {
-  "runtime": 419,
+  "runtime": 432,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -8,12 +8,12 @@
   "failedTestCases": [],
   "suites": [
     {
-      "suiteName": "GET / - setCustomHeader",
+      "suiteName": "Testing 'getProducts' function",
       "passed": true,
       "testCases": [
         {
           "passed": true,
-          "description": "sets the custom header and sends the response"
+          "description": "should ensure that when a user sends a GET request to port 3000 (/), the index.html file gets rendered."
         }
       ]
     }

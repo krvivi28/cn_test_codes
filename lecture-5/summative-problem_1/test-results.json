@@ -1,5 +1,5 @@
 {
-  "runtime": 419,
+  "runtime": 1508,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -8,12 +8,12 @@
   "failedTestCases": [],
   "suites": [
     {
-      "suiteName": "GET / - setCustomHeader",
+      "suiteName": "Testing userController function and GET request('/users') at  ",
       "passed": true,
       "testCases": [
         {
           "passed": true,
-          "description": "sets the custom header and sends the response"
+          "description": "should check status and respose of GET request('/users')"
         }
       ]
     }

@@ -1,20 +1,18 @@
-import { publishBlog, writeBlog } from "./blogActions.js";
-import fs from "fs";
-beforeEach(() => {
-  fs.writeFileSync("myblog.txt", "");
-});
-describe("Blog Actions", () => {
-  it("writeBlog should write the blog content to file", () => {
-    const content = "This is my blog content";
-    writeBlog("myblog.txt", content);
-    const fileContent = fs.readFileSync("myblog.txt", "utf-8");
-    expect(fileContent).toEqual(content);
+import request from "supertest";
+import ProductModel from "./src/models/product.model";
+import app from "./index.js";
+import { products } from "./src/assets/products";
+const productModel = new ProductModel();
+describe("Testing fetchProducts and getProducts", () => {
+  it("fetchProducts should return the array of products", () => {
+    expect(productModel.fetchProducts()).toEqual(products);
   });
-
-  it("publishBlog should return the blog content from file", () => {
-    const content = "This is my blog content";
-    fs.writeFileSync("mytext.txt", content);
-    const publishedBlog = publishBlog("mytext.txt");
-    expect(publishedBlog).toEqual(content);
+  it("getProducts should respond with the data retrieved from the fetchProducts method when a user sends a GET request ('/') to port 3000.", async () => {
+    const res = await request(app).get("/");
+    const responseData = res.body;
+    expect(res.status).toBe(200);
+    expect(Array.isArray(responseData)).toBe(true);
+    expect(responseData).toEqual(expect.any(Array));
+    expect(responseData).toEqual(products);
   });
 });

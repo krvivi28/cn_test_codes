@@ -1,0 +1,25 @@
+{
+  "runtime": 458,
+  "percentageScore": 100,
+  "count": {
+    "total": 1,
+    "passed": 1
+  },
+  "failedTestCases": [],
+  "suites": [
+    {
+      "suiteName": "Testing fetchProducts and getProducts",
+      "passed": true,
+      "testCases": [
+        {
+          "passed": true,
+          "description": "fetchProducts should return the array of products"
+        },
+        {
+          "passed": true,
+          "description": "getProducts should respond with the data retrieved from the fetchProducts method when a user sends a GET request ('/') to port 3000."
+        }
+      ]
+    }
+  ]
+}
