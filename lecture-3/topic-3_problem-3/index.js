@@ -1,8 +1,8 @@
-import input from "readline";
-import * as nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
+import readline from "readline";
 
 const Solution = () => {
-  const cout = input.createInterface({
+  const cout = readline.createInterface({
     input: process.stdin,
     output: process.stdout,
   });
