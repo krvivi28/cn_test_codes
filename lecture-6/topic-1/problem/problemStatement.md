@@ -14,6 +14,10 @@ You are tasked with enhancing an existing Node.js MVC (Model-View-Controller) ap
     Implement a GET route ("/createblog") in the "index.js" file, which serves as the main entry point of the application. This route should:
         1. Utilize the "renderBlogForm" function from the "blog.controller.js" file to render the blog creation form view.
 
+## Output
+
+    You can find the sample output in the output folder.
+
 ## Note
 
 Your implementation should follow the Node.js MVC pattern, ensuring a clear separation of concerns among models, views, and controllers. Additionally, it should leverage the EJS templating engine to render the necessary views.
