@@ -1,21 +1,10 @@
 {
-  "runtime": 410,
-  "percentageScore": 100,
+  "runtime": 0,
+  "percentageScore": null,
   "count": {
-    "total": 1,
-    "passed": 1
+    "total": 0,
+    "passed": 0
   },
   "failedTestCases": [],
-  "suites": [
-    {
-      "suiteName": "An interface which takes a mail as input is created and mail is sent to that specific email",
-      "passed": true,
-      "testCases": [
-        {
-          "passed": true,
-          "description": "sends an email to the specified user"
-        }
-      ]
-    }
-  ]
+  "suites": []
 }

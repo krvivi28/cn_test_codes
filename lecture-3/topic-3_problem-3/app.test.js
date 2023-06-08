@@ -10,7 +10,7 @@ const createInterfaceSpy = jest
   .spyOn(readline, "createInterface")
   .mockReturnValue({
     question: jest.fn().mockImplementationOnce((question, cb) => cb(userMail)),
-    close: jest.fn(),
+    close: jest.fn().mockImplementationOnce(() => undefined),
   });
 
 const consoleSpy = jest.spyOn(console, "log");
@@ -29,7 +29,7 @@ let mailOptions = {
   subject: "coding Ninjas",
   text: "The world has enough coders; be a coding ninja!",
 };
-
+jest.mock("readline");
 describe("An interface which takes a mail as input is created and mail is sent to that specific email", () => {
   it("sends an email to the specified user", () => {
     const transporter = {

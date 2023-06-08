@@ -1,10 +1,11 @@
 {
   "name": "finaltest",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "start": "nodemon index.js"
   },
   "devDependencies": {
