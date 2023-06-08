@@ -11,8 +11,8 @@ You are tasked with enhancing an existing Node.js MVC (Model-View-Controller) ap
         1. Render the "createBlog.ejs" view, displaying the blog creation form to the user.
         2. Ensure that the rendered view includes necessary form elements (title, description, and image URL inputs).
 
-    Implement a GET route ("/createblog") in the application's routing mechanism. This route should:
-        1.Utilize the "renderBlogForm" function to render the blog creation form view.
+    Implement a GET route ("/createblog") in the "index.js" file, which serves as the main entry point of the application. This route should:
+        1. Utilize the "renderBlogForm" function from the "blog.controller.js" file to render the blog creation form view.
 
 ## Note
 
