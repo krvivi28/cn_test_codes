@@ -17,7 +17,7 @@ You are tasked with enhancing an existing Node.js MVC (Model-View-Controller) ap
 ## Output
 
 You can find the sample output in the output folder.
-https://files.codingninjas.in/screencast-from-08-06-23-08_31_12-pm-ist-27943.gif
+Link: https://files.codingninjas.in/output-27944.gif
 
 ## Note
 
