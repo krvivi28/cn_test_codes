@@ -5,11 +5,11 @@ Enhance an existing Node.js MVC application to include form data parsing and rou
 # Render Blog Form
 
     1.Implement a route handler for a GET request to "/createblog" in index.js.
-    2.Call and complete the renderBlogForm function defined in blog.controller.js to render the    "renderBlogForm" view and return it as the response.
+    2.Call and complete the renderBlogForm function defined in blog.controller.js to render the "renderBlogForm" view and return it as the response.
 
 # Render Blogs
 
-    1. Implement a route handler for a GET request to "/" in index.js.
+    1.Implement a route handler for a GET request to "/" in index.js.
     2.Call and complete the renderBlogs function defined in blog.controller.js to render the "blogs" view using data from the "blogs" array in blog.model.js.
 
 # Add New Blog
