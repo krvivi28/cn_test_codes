@@ -1,4 +1,4 @@
-## Node.js MVC Pattern: Blog Management System
+## Node.js MVC Pattern: Parsing form data and adding a new blog
 
 You are tasked with enhancing an existing Node.js MVC (Model-View-Controller) application to parsing form data and implement routing functionality.
 
