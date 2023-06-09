@@ -32,6 +32,6 @@ In a Node.js MVC-based project, you have been assigned the task of implementing 
 
     "Validation successful!"
 
-# Output
+# Expected Output
 
     https://files.codingninjas.in/validation-27964.gif
