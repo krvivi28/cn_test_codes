@@ -19,7 +19,7 @@ export const validateBlog = (req, res) => {
     errors.push("The description field should contain at least 10 characters");
   }
   if (errors.length > 0) {
-    res.status(400).render("addBlog", { errors, success: false });
+    res.status(401).render("addBlog", { errors, success: false });
   }
   res.status(201).render("addBlog", { errors: null, success: true });
 };
