@@ -5,19 +5,22 @@ Enhance an existing Node.js MVC application to include form data parsing and rou
 # Render Blog Form
 
     1.Implement a route handler for a GET request to "/createblog" in index.js.
-    2.Call and complete the renderBlogForm function defined in blog.controller.js to render the "renderBlogForm" view and return it as the response.
+    2.Complete the renderBlogForm function defined in blog.controller.js to render the "renderBlogForm" view and return it as the response.
 
 # Render Blogs
 
     1.Implement a route handler for a GET request to "/" in index.js.
-    2.Call and complete the renderBlogs function defined in blog.controller.js to render the "blogs" view using data from the "blogs" array in blog.model.js.
+
+    2.Complete the renderBlogs function, as defined in blog.controller.js, to render the "blogs" view. This view will display all the data from the "blogs" array in blog.model.js and return it as the response.
+    Additionally, implement the "blogs" view, which will list all the data for the blogs.
 
 # Add New Blog
 
     1.Implement a route handler for a POST request to "/addblog" in index.js.
-    2.Invoke and complete the addBlog function defined in blog.controller.js to handle the user's POST request.
+    2.Complete the addBlog function defined in blog.controller.js to handle the user's POST request.
     3.Update the "blogs" array in blog.model.js with the newly added blog.
     4.Render the "blog" view with the updated "blogs" array to display the newly added blog along with the existing blogs.
+    5.Return the addBlog function as a response, and ensure that the response is accompanied by the status code 201.
 
 ## Output
 
