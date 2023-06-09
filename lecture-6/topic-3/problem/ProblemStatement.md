@@ -2,7 +2,7 @@
 
 In a Node.js MVC-based project, you have been assigned the task of implementing form validation. This feature consists of an "addBlog.ejs" view, which is a form, and a "validateBlog" function inside "blog.controller.js" that handles a POST request at "/addblog" to process the form data. However, the current implementation of the validation function fails to validate the form data properly. Your goal is to enhance the validation logic to meet the following criteria:
 
-# Actionables:
+# Tasks:
 
     # Validate the "Title" Field:
 
