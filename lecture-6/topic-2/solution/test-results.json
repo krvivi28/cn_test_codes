@@ -1,5 +1,5 @@
 {
-  "runtime": 446,
+  "runtime": 516,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -8,16 +8,20 @@
   "failedTestCases": [],
   "suites": [
     {
-      "suiteName": "Blog Creation Form and Routing",
+      "suiteName": "Node.js MVC App",
       "passed": true,
       "testCases": [
         {
           "passed": true,
-          "description": "should render the blog creation form"
+          "description": "should render the blog form on GET /createblog"
         },
         {
           "passed": true,
-          "description": "should render the \"createBlog\" view"
+          "description": "should render the blogs on GET /"
+        },
+        {
+          "passed": true,
+          "description": "should add a new blog on POST /addblog"
         }
       ]
     }

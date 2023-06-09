@@ -1,32 +1,38 @@
 import request from "supertest";
 import app from "./index.js";
-import { renderBlogForm } from "./src/controllers/blog.controller.js";
 
-describe("Blog Creation Form and Routing", () => {
-  // Test the GET route for rendering the blog creation form
-  describe("GET /createblog", () => {
-    it("should render the blog creation form", async () => {
-      const response = await request(app).get("/createblog");
-      expect(response.status).toBe(200);
-      expect(response.header["content-type"]).toContain("text/html");
-      expect(response.text).toMatch(/text/i);
-      expect(response.text).toMatch(/title/i);
-      expect(response.text).toMatch(/submit/i);
-      expect(response.text).toMatch(/description/i);
-    });
+describe("Node.js MVC App", () => {
+  it("should render the blog form on GET /createblog", async () => {
+    const response = await request(app).get("/createblog");
+    expect(response.status).toBe(200);
+    expect(response.text).toContain("Add Blog");
   });
 
-  // Test the renderBlogForm function
-  describe("renderBlogForm", () => {
-    it('should render the "createBlog" view', () => {
-      const req = {};
-      const res = {
-        status: jest.fn(() => res),
-        render: jest.fn(),
-      };
-      renderBlogForm(req, res);
-      expect(res.status).toHaveBeenCalledWith(200);
-      expect(res.render).toHaveBeenCalledWith("createBlog");
-    });
+  it("should render the blogs on GET /", async () => {
+    const response = await request(app).get("/");
+    expect(response.status).toBe(200);
+    expect(response.text).toContain("Coding Nijas");
+    expect(response.text).toContain("Apple");
+  });
+
+  it("should add a new blog on POST /addblog", async () => {
+    const newBlog = {
+      title: "New Blog",
+      description: "This is a new blog.",
+      img: "https://example.com/image.jpg",
+    };
+
+    const response = await request(app)
+      .post("/addblog")
+      .type("form")
+      .send(newBlog);
+
+    expect(response.status).toBe(201);
+
+    // Check if the new blog is added to the blogs array
+    const blogsResponse = await request(app).get("/");
+    expect(blogsResponse.text).toContain(newBlog.title);
+    expect(blogsResponse.text).toContain(newBlog.description);
+    expect(blogsResponse.text).toContain(newBlog.img);
   });
 });
