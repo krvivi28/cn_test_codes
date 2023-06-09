@@ -15,3 +15,4 @@ The middleware function should be named "formValidationMiddleware" and placed wi
 # Hint
 
 You can use Postman to verify the functionality of the "/new post" route
+https://files.codingninjas.in/middleware-27982.gif
