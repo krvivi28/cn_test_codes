@@ -10,6 +10,6 @@ app.set("view engine", "ejs");
 app.set("views", "views");
 app.get("/", renderUpdateForm);
 
-// Write route for post("/") here
+// create POST route at ("/") to handle the form submission
 
 export default app;
