@@ -1,4 +1,4 @@
-import { user } from "./product.model.js";
+import { user } from "./user.model.js";
 
 export const renderUpdateForm = (req, res) => {
   res.render("update-form", { user });
