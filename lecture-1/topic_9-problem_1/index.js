@@ -1,12 +1,14 @@
 const http = require("http");
 const fs = require("fs");
 
-const server = http.createServer(function requestListner(request, response) {
+const server = http.createServer((req, res) => {
   const stringOfHTML = fs.readFileSync("index.html").toString();
-  response.end(stringOfHTML);
+  res.end(stringOfHTML);
 });
 
-server.listen(8080);
+server.listen(8080, () => {
+  console.log("server is listening at port 8080");
+});
 module.exports = server;
 /*
 This code creates a Node.js server that serves an HTML file named index.html 
