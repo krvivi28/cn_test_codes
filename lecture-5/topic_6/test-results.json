@@ -1,9 +1,9 @@
 {
-  "runtime": 623,
+  "runtime": 510,
   "percentageScore": 100,
   "count": {
-    "total": 2,
-    "passed": 2
+    "total": 3,
+    "passed": 3
   },
   "failedTestCases": [],
   "suites": [
@@ -28,6 +28,16 @@
         {
           "passed": true,
           "description": "should send 'products' data"
+        }
+      ]
+    },
+    {
+      "suiteName": "ProductModel",
+      "passed": true,
+      "testCases": [
+        {
+          "passed": true,
+          "description": "fetchProducts should return the products array"
         }
       ]
     }
