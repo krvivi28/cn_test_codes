@@ -2,6 +2,8 @@ import request from "supertest";
 import ProductModel from "./src/models/product.model";
 import app from "./index.js";
 import { products } from "./src/assets/products";
+import ProductController from "./src/controllers/product.controller";
+const productController = new ProductController();
 const productModel = new ProductModel();
 describe("Testing fetchProducts and getProducts", () => {
   it("fetchProducts should return the array of products", () => {
@@ -14,5 +16,17 @@ describe("Testing fetchProducts and getProducts", () => {
     expect(Array.isArray(responseData)).toBe(true);
     expect(responseData).toEqual(expect.any(Array));
     expect(responseData).toEqual(products);
+  });
+});
+
+describe("getProducts", () => {
+  it("should send 'products' data", () => {
+    const req = {};
+    const res = {
+      status: jest.fn(() => res),
+      send: jest.fn(),
+    };
+    productController.getProducts(req, res);
+    expect(res.send).toHaveBeenCalledWith(products);
   });
 });
