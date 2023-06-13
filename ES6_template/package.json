@@ -4,6 +4,7 @@
   "type": "module",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "start": "nodemon index.js"
