@@ -1,5 +1,5 @@
 {
-  "runtime": 641,
+  "runtime": 451,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -13,7 +13,7 @@
       "testCases": [
         {
           "passed": true,
-          "description": "It should return the required HTML string and status code"
+          "description": "It should return the required HTML File"
         }
       ]
     }

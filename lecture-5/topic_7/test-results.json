@@ -1,9 +1,9 @@
 {
-  "runtime": 512,
+  "runtime": 525,
   "percentageScore": 100,
   "count": {
-    "total": 1,
-    "passed": 1
+    "total": 2,
+    "passed": 2
   },
   "failedTestCases": [],
   "suites": [
@@ -18,6 +18,16 @@
         {
           "passed": true,
           "description": "getProducts should respond with the data retrieved from the fetchProducts method when a user sends a GET request ('/') to port 3000."
+        }
+      ]
+    },
+    {
+      "suiteName": "getProducts",
+      "passed": true,
+      "testCases": [
+        {
+          "passed": true,
+          "description": "should send render 'product.ejs' view with 'products' data"
         }
       ]
     }

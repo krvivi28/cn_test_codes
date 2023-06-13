@@ -1,5 +1,5 @@
 {
-  "runtime": 1341,
+  "runtime": 707,
   "percentageScore": 100,
   "count": {
     "total": 1,
@@ -8,12 +8,12 @@
   "failedTestCases": [],
   "suites": [
     {
-      "suiteName": "Testing userController function and GET request('/users') at  ",
+      "suiteName": "Server is setup on port 8080",
       "passed": true,
       "testCases": [
         {
           "passed": true,
-          "description": "should check status and respose of GET request('/users')"
+          "description": "Server should send a response with the required text"
         }
       ]
     }

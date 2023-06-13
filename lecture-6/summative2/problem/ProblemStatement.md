@@ -6,19 +6,20 @@ A developer is facing challenges in implementing the search functionality in a N
 
     1.Create a view named "searchResult.ejs" to display the search results.
 
-    2.The "searchResult.ejs" view should be responsible for rendering the search results in a user-friendly format.
+    2. The "searchResult.ejs" view should be responsible for rendering the search results in a user-friendly format.
 
 
-    3.Modify the existing code to implement a search algorithm that filters products based on their name.
+    3. Modify the existing code to implement a search algorithm that filters products based on their name.
 
     4.Implement the 'search' controller inside the 'productcontroller.js' file to handle the POST request at the '/search' endpoint.
 
 # Output
 
-    The expected output is a GIF demonstrating the desired behavior of the search functionality. The GIF can be accessed using the following link: Search Functionality Output GIF
+    1. The expected output is a GIF demonstrating the desired behavior of the search functionality.
+
+    2. The GIF can be accessed using the following link:
+    https://files.codingninjas.in/search-27996.gif
 
 # Note:
 
-    1. The search algorithm should consider partial matches and be case-insensitive.
-
-    2. The GIF showcases the expected visual behavior of the search functionality once implemented correctly.
+    1. The GIF showcases the expected visual behavior of the search functionality once implemented correctly.
