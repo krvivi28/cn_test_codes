@@ -1,21 +1,19 @@
 {
-  "runtime": 271,
-  "percentageScore": 0,
+  "runtime": 402,
+  "percentageScore": 100,
   "count": {
     "total": 1,
-    "passed": 0
+    "passed": 1
   },
-  "failedTestCases": [
-    "should update the file and read the updated data"
-  ],
+  "failedTestCases": [],
   "suites": [
     {
-      "suiteName": "Solution",
-      "passed": false,
+      "suiteName": "test app.js",
+      "passed": true,
       "testCases": [
         {
-          "passed": false,
-          "description": "should update the file and read the updated data"
+          "passed": true,
+          "description": "it should append data to file note.txt,and then read with updated data"
         }
       ]
     }

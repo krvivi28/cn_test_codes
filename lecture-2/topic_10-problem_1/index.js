@@ -3,7 +3,7 @@
 const fs = require("fs");
 
 const Solution = () => {
-  fs.appendFile("note.txt", " new data", (err) => {
+  fs.appendFile("note.txt", "new data", (err) => {
     if (err) {
       console.log(err);
     } else {
