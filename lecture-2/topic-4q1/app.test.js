@@ -11,6 +11,9 @@ describe("use axios to fetch data", () => {
       name: "coding_ninjas",
     });
     expect(consoleSpy).toHaveBeenCalledTimes(1);
+    expect(axiosSpy).toHaveBeenCalledWith(
+      "https://api.codingninjas.com/api/v3/event_tags"
+    );
     axiosSpy.mockRestore();
     consoleSpy.mockRestore();
   });
