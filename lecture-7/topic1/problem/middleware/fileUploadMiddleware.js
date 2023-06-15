@@ -1,13 +1,4 @@
-import multer from "multer";
-import path from "path";
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, path.resolve("public", "uploads"));
-  },
-  filename: (req, file, cb) => {
-    const updatedFileName = Date.now() + file.originalname;
-    cb(null, updatedFileName);
-  },
-});
+// Please don't change the pre-written code
+// Import the necessary modules here
 
-export default multer({ storage });
+// Write your code here
