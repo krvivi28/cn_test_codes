@@ -1,10 +1,3 @@
-you have been given a "secure-page.ejs" view and it should be accessible only when a user has logged in i.e a user without login should not be able to access this page.You have to make it secure using express-session.
-You have to also complete the "auth" function inside midlleware and use it in
-"app.get("/",userController.getSecure)" to make autheticate user before accesssing the secure page.
-You can modify the "loginUser" function of user.controller.js to achieve the functionality.
-
-For better understanding see the code structure and output gif
-
 Title: Secure Page Access with Express-Session
 
 Introduction:
