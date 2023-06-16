@@ -1,4 +1,4 @@
-Title: User Registration and Login in MVC Project
+Title: User Registration and Login Routes in MVC Project
 
 Introduction:
 In an MVC-based project, you have been given two views: "user-register.ejs" and "user-login.ejs." Your task is to create four routes to handle user registration and login functionalities. The project involves a web application where users can register and log in to access their accounts securely.
@@ -17,7 +17,7 @@ Expected Output:
 
 Upon successful user registration, the user should be redirected to the "user-login" view. When logging in, the system should authenticate the user's credentials and respond with either { success: "true", message: "login successful" } or { success: "false", message: "login failed" } based on the validation result.
 
-Link: https://files.codingninjas.in/lec-7-topic5-28198.gif
+Link: https://files.codingninjas.in/uploadmiddleware-28193.gif
 
 Requirements:
 
@@ -28,6 +28,6 @@ Requirements:
 
 Notes/Hints:
 
-1.Ensure proper routing and function implementation for each route.
-2.Pay attention to the flow of data between the controller and the model.
-3.Refer to the provided output GIF for a better understanding of the expected behavior.
+Ensure proper routing and function implementation for each route.
+Pay attention to the flow of data between the controller and the model.
+Refer to the provided output GIF for a better understanding of the expected behavior.
