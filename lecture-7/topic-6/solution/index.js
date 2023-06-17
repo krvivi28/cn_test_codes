@@ -30,6 +30,6 @@ app.get("/register", userController.getRegister);
 app.post("/register", userController.addUser);
 app.get("/login", userController.getLogin);
 app.post("/login", userController.loginUser);
-
+app.get("/logout", userController.userLogout);
 
 export default app;
