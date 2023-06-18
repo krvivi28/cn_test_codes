@@ -25,7 +25,6 @@ describe("Blog Creation Form and Routing", () => {
         render: jest.fn(),
       };
       renderBlogForm(req, res);
-      expect(res.status).toHaveBeenCalledWith(200);
       expect(res.render).toHaveBeenCalledWith("createBlog");
     });
   });

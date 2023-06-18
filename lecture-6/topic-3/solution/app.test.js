@@ -9,7 +9,6 @@ describe("Form Validation", () => {
       image: "https://example.com/image.jpg",
     });
 
-    expect(response.status).toBe(201);
     expect(response.text).toMatch(/validation successful/i);
   });
 
@@ -19,8 +18,6 @@ describe("Form Validation", () => {
       description: "My Blog",
       image: "invalid-url",
     });
-
-    expect(response.status).toBe(401);
     expect(response.text).toMatch(
       /The title field should contain at least 3 characters/i
     );
@@ -38,8 +35,6 @@ describe("Form Validation", () => {
       description: "",
       image: "",
     });
-
-    expect(response.status).toBe(401);
     expect(response.text).toMatch(/The title field should not be empty/i);
     expect(response.text).toMatch(/The description field should not be empty/i);
     expect(response.text).toMatch(

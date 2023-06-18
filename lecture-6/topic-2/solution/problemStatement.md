@@ -20,7 +20,6 @@ Enhance an existing Node.js MVC application to include form data parsing and rou
     2.Complete the addBlog function defined in blog.controller.js to handle the user's POST request.
     3.Update the "blogs" array in blog.model.js with the newly added blog.
     4.Render the "blog" view with the updated "blogs" array to display the newly added blog along with the existing blogs.
-    5.Return the addBlog function as a response, and ensure that the response is accompanied by the status code 201.
 
 ## Output
 

@@ -1,3 +1,3 @@
 export const renderBlogForm = (req, res) => {
-  res.status(200).render("createBlog");
+  res.render("createBlog");
 };

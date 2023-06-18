@@ -27,8 +27,6 @@ describe("Node.js MVC App", () => {
       .type("form")
       .send(newBlog);
 
-    expect(response.status).toBe(201);
-
     // Check if the new blog is added to the blogs array
     const blogsResponse = await request(app).get("/");
     expect(blogsResponse.text).toContain(newBlog.title);
