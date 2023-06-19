@@ -14,7 +14,7 @@ Enhance an existing Node.js MVC application to include form data parsing and rou
 
     1.Implement a route handler for a GET request to "/" in index.js.
 
-    2.Complete the renderBlogs function, as defined in blog.controller.js, to render the "blogs" view. This view will display all the data from the "blogs" array in blog.model.js.
+    2.Complete the renderBlogs function, as defined in blog.controller.js, to render the "blogs" view. This view should display all the data from the "blogs" array in blog.model.js.
     The renderBlogs function should serve as the controller for the "/createblog" route
     Additionally, implement the "blogs" view, which will list all the data for the blogs.
 

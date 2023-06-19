@@ -1,5 +1,8 @@
 export const validateBlog = (req, res) => {
   const { title, description, image } = req.body;
+  title.trim();
+  description.trim();
+  image.trim();
   const errors = [];
   try {
     new URL(image);

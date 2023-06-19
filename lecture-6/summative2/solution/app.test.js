@@ -20,7 +20,7 @@ describe("POST /", () => {
 });
 
 describe("search", () => {
-  it('should render the "update-form" view', () => {
+  it("should render searchResults view with matching products", () => {
     const req = {
       body: {
         name: "apple",

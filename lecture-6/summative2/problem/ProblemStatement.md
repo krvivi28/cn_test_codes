@@ -1,6 +1,7 @@
 # Product Search Functionality Implementation in Node.js MVC Pattern
 
-A developer is facing challenges in implementing the search functionality in a Node.js application following the MVC (Model-View-Controller) pattern. The search functionality involves a search bar inside the "views/layout.ejs" file, which takes user input and searches for matching products by their name. The search bar is implemented as a form that makes a POST request to the '/search' endpoint.
+A developer wants to implement the search functionality in a Node.js application following the MVC (Model-View-Controller) pattern. The search functionality involves a search bar inside the "views/layout.ejs" file, which takes user input and searches for matching products by their name. The search bar is implemented as a form that makes a POST request to the '/search' endpoint.
+Help the developer in accomplishing this task.
 
 # Tasks
 
