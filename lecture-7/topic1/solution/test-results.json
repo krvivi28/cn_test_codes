@@ -1,29 +1,21 @@
 {
-  "runtime": 450,
-  "percentageScore": 100,
+  "runtime": 583,
+  "percentageScore": 0,
   "count": {
-    "total": 2,
-    "passed": 2
+    "total": 1,
+    "passed": 0
   },
-  "failedTestCases": [],
+  "failedTestCases": [
+    "should upload a file successfully"
+  ],
   "suites": [
     {
-      "suiteName": "POST /",
-      "passed": true,
+      "suiteName": "File Upload",
+      "passed": false,
       "testCases": [
         {
-          "passed": true,
-          "description": "should update user data and render update-form view with updated user data"
-        }
-      ]
-    },
-    {
-      "suiteName": "updateUser",
-      "passed": true,
-      "testCases": [
-        {
-          "passed": true,
-          "description": "should render the \"update-form\" view"
+          "passed": false,
+          "description": "should upload a file successfully"
         }
       ]
     }
